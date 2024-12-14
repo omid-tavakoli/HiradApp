@@ -1,0 +1,23 @@
+.table-scrollbar {
+  scrollbar-color: #b4b3b3 #f9f9f9;
+  scrollbar-width: thin;
+}
+
+/* width */
+.table-scrollbar::-webkit-scrollbar {
+  width: 5px;
+  height: 8px;
+}
+
+/* Track */
+.table-scrollbar::-webkit-scrollbar-track {
+  /* box-shadow: inset 0 0 5px grey; */
+  background-color: #f9f9f9;
+  border-radius: 4px;
+}
+
+/* Handle */
+.table-scrollbar::-webkit-scrollbar-thumb {
+  background: #b4b3b3;
+  border-radius: 10px;
+}
