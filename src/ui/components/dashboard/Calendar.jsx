@@ -157,8 +157,9 @@ function Calendar() {
             className={`relative border border-slate-200 p-4 text-slate-500 text-center ${
               !isSameMonth(day, monthStart)
                 ? "disabled bg-gray-50"
-                : "hover:bg-red-100 cursor-pointer" +
-                  (isSameDay(day, currentDate) ? "selected" : "")
+                : `hover:bg-red-100 cursor-pointer ${
+                    isSameDay(day, currentDate) ? "selected" : ""
+                  } ${isSameDay(day, new Date()) ? "bg-red-50" : ""}`
             }`}
             onClick={() => {
               handleDayClick(clonedDay, dayExams);
@@ -177,19 +178,28 @@ function Calendar() {
               </span>
               <span>{digitsEnToFa(formattedDate)}</span>
               <div className="flex">
-                {dayExams.map((exam, index) => (
-                  <span
-                    key={index}
-                    className={`w-2.5 h-2.5 text-xs ${
-                      isBefore(
-                        now,
-                        parse(exam.eventTime, "yyyy/MM/dd HH:mm", new Date())
-                      )
-                        ? "bg-blue-500"
-                        : "bg-primary-500"
-                    } border-2 border-white rounded-full`}
-                  ></span>
-                ))}
+                {dayExams.map((exam, index) => {
+                  const examDate = parse(
+                    exam.eventTime,
+                    "yyyy/MM/dd HH:mm",
+                    new Date()
+                  );
+                  const isPast = isBefore(examDate, now); 
+                  const isToday = isSameDay(examDate, now);
+
+                  return (
+                    <span
+                      key={index}
+                      className={`w-2.5 h-2.5 text-xs ${
+                        isToday
+                          ? "bg-primary-500" 
+                          : isPast
+                          ? "bg-yellow-500" 
+                          : "bg-blue-500"
+                      } border-2 border-white rounded-full`}
+                    ></span>
+                  );
+                })}
               </div>
             </div>
           </td>
