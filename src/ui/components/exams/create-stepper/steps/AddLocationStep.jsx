@@ -14,14 +14,14 @@ const AddLocationStep = ({ onNext, examId }) => {
       return;
     }
     const reqData = {
-      examId: examId,
+      id: examId,
       Latitude: selectedLocation.lat,
       Longitude: selectedLocation.lng,
     };
     try {
       const response = await request.apiCall("post", `Exam/Addlocation`, reqData);
       if (response?.isSuccess) {
-        toast.success("زمان بندی با موفقیت ثبت شد");
+        toast.success("موقعیت مکانی با موفقیت ثبت شد");
         onNext();
       }
     } catch (error) {
