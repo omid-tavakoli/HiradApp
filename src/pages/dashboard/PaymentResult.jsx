@@ -14,7 +14,7 @@ const ContractortemProfile = () => {
         </div>
 
         <div className="flex flex-col items-center">
-          <XCircleIcon className="text-red-500 size-60" />
+          <XCircleIcon className="text-primary-500 size-60" />
 
           <div className="text-lg">پرداخت با موفقیت با خطا خورد. </div>
         </div>

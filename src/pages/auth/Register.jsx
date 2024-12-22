@@ -156,7 +156,7 @@ const Register = () => {
             className="form-input block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-gray-400 sm:text-sm sm:leading-6"
           />
           {errors.name && (
-            <p className="text-red-600 text-xs">{errors.name.message}</p>
+            <p className="text-primary-600 text-xs">{errors.name.message}</p>
           )}
         </div>
 
@@ -170,7 +170,7 @@ const Register = () => {
             className="form-input block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-gray-400 sm:text-sm sm:leading-6"
           />
           {errors.family && (
-            <p className="text-red-600 text-xs">{errors.family.message}</p>
+            <p className="text-primary-600 text-xs">{errors.family.message}</p>
           )}
         </div>
 
@@ -198,7 +198,7 @@ const Register = () => {
             className="form-input block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-gray-400 sm:text-sm sm:leading-6"
           />
           {errors.subSysTitle && (
-            <p className="text-red-600 text-xs">{errors.subSysTitle.message}</p>
+            <p className="text-primary-600 text-xs">{errors.subSysTitle.message}</p>
           )}
         </div>
         <div className="space-y-2">
@@ -211,7 +211,7 @@ const Register = () => {
             className="form-input block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-gray-400 sm:text-sm sm:leading-6"
           />
           {errors.subSysCode && (
-            <p className="text-red-600 text-xs">{errors.subSysCode.message}</p>
+            <p className="text-primary-600 text-xs">{errors.subSysCode.message}</p>
           )}
         </div>
         <div className="space-y-2">
@@ -236,7 +236,7 @@ const Register = () => {
             <label className="text-xs text-gray-600" htmlFor="acceptRule">
               <a
                 href="/rules.pdf"
-                className="font-medium text-red-600 hover:underline"
+                className="font-medium text-primary-600 hover:underline"
                 download
               >
                 قوانین و مقررات
@@ -245,7 +245,7 @@ const Register = () => {
             </label>
           </div>
           {errors.acceptRule && (
-            <p className="text-red-600 text-xs">{errors.acceptRule.message}</p>
+            <p className="text-primary-600 text-xs">{errors.acceptRule.message}</p>
           )}
         </div>
 

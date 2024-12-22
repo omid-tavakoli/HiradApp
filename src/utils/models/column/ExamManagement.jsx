@@ -62,7 +62,7 @@ const getColumns = () => {
         }`,
       cell: (info) =>
         info.getValue() ? (
-          <span className="w-fit bg-red-100  text-red-800   text-xs font-medium me-2 px-2.5 py-0.5 rounded-full">
+          <span className="w-fit bg-primary-100  text-primary-800   text-xs font-medium me-2 px-2.5 py-0.5 rounded-full">
             تمام شده
           </span>
         ) : (
@@ -79,7 +79,7 @@ const getColumns = () => {
             انجام شده
           </span>
         ) : (
-          <span className="w-fit bg-red-100 text-red-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded-full">
+          <span className="w-fit bg-primary-100 text-primary-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded-full">
             انجام نشده
           </span>
         ),

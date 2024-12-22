@@ -43,7 +43,7 @@ const NumberInput = ({ id, onChangeAnswer, value, min, max, required }) => {
         required={required}
       />
       {errors && (
-        <span className="text-red-600 text-xs mt-2">{errors.message}</span>
+        <span className="text-primary-600 text-xs mt-2">{errors.message}</span>
       )}
     </>
   );

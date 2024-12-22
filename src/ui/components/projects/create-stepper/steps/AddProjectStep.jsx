@@ -223,7 +223,7 @@ const AddProjectStep = ({
             className="form-input block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-gray-400 sm:text-sm sm:leading-6"
           />
           {errors.title && (
-            <p className="text-red-600 text-xs">{errors.title.message}</p>
+            <p className="text-primary-600 text-xs">{errors.title.message}</p>
           )}
         </div>
 
@@ -254,7 +254,7 @@ const AddProjectStep = ({
           />
 
           {errors.subSysKindId && (
-            <div className="text-red-600 text-xs">لطفا نوع را مشخص کنید</div>
+            <div className="text-primary-600 text-xs">لطفا نوع را مشخص کنید</div>
           )}
         </div>
 
@@ -289,7 +289,7 @@ const AddProjectStep = ({
             )}
           />
           {errors.startDate && (
-            <p className="text-red-600 text-xs">{errors.startDate.message}</p>
+            <p className="text-primary-600 text-xs">{errors.startDate.message}</p>
           )}
         </div>
 
@@ -321,7 +321,7 @@ const AddProjectStep = ({
             )}
           />
           {errors.endDate && (
-            <p className="text-red-600 text-xs">{errors.endDate.message}</p>
+            <p className="text-primary-600 text-xs">{errors.endDate.message}</p>
           )}
         </div>
 
@@ -335,7 +335,7 @@ const AddProjectStep = ({
             className="form-input block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-gray-400 sm:text-sm sm:leading-6"
           />
           {errors.identity && (
-            <p className="text-red-600 text-xs">{errors.identity.message}</p>
+            <p className="text-primary-600 text-xs">{errors.identity.message}</p>
           )}
         </div>
 

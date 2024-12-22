@@ -121,7 +121,7 @@ const AddSupervisorsForm = ({
             />
 
             {errors.userId && (
-              <div className="text-red-600 text-xs">
+              <div className="text-primary-600 text-xs">
                 لطفا کاربر مورد نظر خود را مشخص کنید
               </div>
             )}

@@ -45,7 +45,7 @@ const PasswordInput = ({
         </div>
       </div>
 
-      {error && <p className="text-red-600 text-xs">{error}</p>}
+      {error && <p className="text-primary-600 text-xs">{error}</p>}
     </div>
   );
 };

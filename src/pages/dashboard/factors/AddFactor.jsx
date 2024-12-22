@@ -85,7 +85,7 @@ export default function AddFactor({ defaultNationalCode }) {
             defaultValue={user.name}
           />
           {errors.name && (
-            <p className="text-red-600 text-xs">{errors.name.message}</p>
+            <p className="text-primary-600 text-xs">{errors.name.message}</p>
           )}
         </div>
         <div className="space-y-2 col-span-2">
@@ -98,7 +98,7 @@ export default function AddFactor({ defaultNationalCode }) {
             defaultValue={user.family}
           />
           {errors.family && (
-            <p className="text-red-600 text-xs">{errors.family.message}</p>
+            <p className="text-primary-600 text-xs">{errors.family.message}</p>
           )}
         </div>
         <div className="space-y-2 col-span-2">
@@ -111,7 +111,7 @@ export default function AddFactor({ defaultNationalCode }) {
             defaultValue={defaultNationalCode}
           />
           {errors.nationalCode && (
-            <p className="text-red-600 text-xs">
+            <p className="text-primary-600 text-xs">
               {errors.nationalCode.message}
             </p>
           )}
@@ -126,7 +126,7 @@ export default function AddFactor({ defaultNationalCode }) {
             defaultValue={user.subSyses[0].title}
           />
           {errors.systemName && (
-            <p className="text-red-600 text-xs">{errors.systemName.message}</p>
+            <p className="text-primary-600 text-xs">{errors.systemName.message}</p>
           )}
         </div>
         <div className="flex flex-col space-y-2">
@@ -135,7 +135,7 @@ export default function AddFactor({ defaultNationalCode }) {
           </label>
           <DateInput name={"date"} register={register} control={control} />
           {errors.date && (
-            <p className="text-red-600 text-xs">{errors.date.message}</p>
+            <p className="text-primary-600 text-xs">{errors.date.message}</p>
           )}
         </div>
         <div className="space-y-2 col-span-2">
@@ -144,7 +144,7 @@ export default function AddFactor({ defaultNationalCode }) {
           </label>
           <TextInput name={"paymentCode"} register={register} />
           {errors.paymentCode && (
-            <p className="text-red-600 text-xs">{errors.paymentCode.message}</p>
+            <p className="text-primary-600 text-xs">{errors.paymentCode.message}</p>
           )}
         </div>
         <div className="flex flex-col space-y-2">
@@ -153,7 +153,7 @@ export default function AddFactor({ defaultNationalCode }) {
           </label>
           <TextInput name={"trackingNumber"} register={register} />
           {errors.trackingNumber && (
-            <p className="text-red-600 text-xs">
+            <p className="text-primary-600 text-xs">
               {errors.trackingNumber.message}
             </p>
           )}

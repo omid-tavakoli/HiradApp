@@ -131,7 +131,7 @@ const ContractortemProfile = () => {
               </label>
               <TextInput name={"companyName"} register={register} />
               {errors.companyName && (
-                <p className="text-red-600 text-xs">
+                <p className="text-primary-600 text-xs">
                   {errors.companyName.message}
                 </p>
               )}
@@ -142,7 +142,7 @@ const ContractortemProfile = () => {
               </label>
               <TextInput name={"companyCode"} register={register} />
               {errors.companyCode && (
-                <p className="text-red-600 text-xs">
+                <p className="text-primary-600 text-xs">
                   {errors.companyCode.message}
                 </p>
               )}
@@ -153,7 +153,7 @@ const ContractortemProfile = () => {
               </label>
               <TextInput name={"telephone"} register={register} />
               {errors.telephone && (
-                <p className="text-red-600 text-xs">
+                <p className="text-primary-600 text-xs">
                   {errors.telephone.message}
                 </p>
               )}
@@ -165,7 +165,7 @@ const ContractortemProfile = () => {
               </label>
               <TextInput name={"ceoName"} register={register} />
               {errors.ceoName && (
-                <p className="text-red-600 text-xs">{errors.ceoName.message}</p>
+                <p className="text-primary-600 text-xs">{errors.ceoName.message}</p>
               )}
             </div>
 
@@ -175,7 +175,7 @@ const ContractortemProfile = () => {
               </label>
               <TextInput name={"ceoFamily"} register={register} />
               {errors.ceoFamily && (
-                <p className="text-red-600 text-xs">
+                <p className="text-primary-600 text-xs">
                   {errors.ceoFamily.message}
                 </p>
               )}
@@ -190,7 +190,7 @@ const ContractortemProfile = () => {
               </label>
               <TextInput name={"ceoNationalCode"} register={register} />
               {errors.ceoNationalCode && (
-                <p className="text-red-600 text-xs">
+                <p className="text-primary-600 text-xs">
                   {errors.ceoNationalCode.message}
                 </p>
               )}
@@ -202,7 +202,7 @@ const ContractortemProfile = () => {
               </label>
               <TextInput name={"mobile"} register={register} />
               {errors.mobile && (
-                <p className="text-red-600 text-xs">{errors.mobile.message}</p>
+                <p className="text-primary-600 text-xs">{errors.mobile.message}</p>
               )}
             </div>
 
@@ -214,7 +214,7 @@ const ContractortemProfile = () => {
                 <Checkbox name={"legal"} register={register} size="small" />
               </div>
               {errors.legal && (
-                <p className="text-red-600 text-xs">{errors.legal.message}</p>
+                <p className="text-primary-600 text-xs">{errors.legal.message}</p>
               )}
             </div>
             <div className="flex flex-col space-y-2">
@@ -223,7 +223,7 @@ const ContractortemProfile = () => {
               </label>
               <TextArea name={"address"} register={register} />
               {errors.address && (
-                <p className="text-red-600 text-xs">{errors.address.message}</p>
+                <p className="text-primary-600 text-xs">{errors.address.message}</p>
               )}
             </div>
           </div>

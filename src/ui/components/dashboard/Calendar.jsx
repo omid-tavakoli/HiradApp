@@ -157,9 +157,9 @@ function Calendar() {
             className={`relative border border-slate-200 p-4 text-slate-500 text-center ${
               !isSameMonth(day, monthStart)
                 ? "disabled bg-gray-50"
-                : `hover:bg-red-100 cursor-pointer ${
+                : `hover:bg-primary-100 cursor-pointer ${
                     isSameDay(day, currentDate) ? "selected" : ""
-                  } ${isSameDay(day, new Date()) ? "bg-red-50" : ""}`
+                  } ${isSameDay(day, new Date()) ? "bg-primary-50" : ""}`
             }`}
             onClick={() => {
               handleDayClick(clonedDay, dayExams);

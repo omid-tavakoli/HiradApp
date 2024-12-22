@@ -69,7 +69,7 @@ const ExamShowInfo = ({ data: examData }) => {
           <div>{examData?.projectTitle}</div>
         </div>
         {!locationPermisison && message && (
-          <div className="text-center text-red-500 text-lg">{message}</div>
+          <div className="text-center text-primary-500 text-lg">{message}</div>
         )}
       </div>
       <div className="flex justify-center w-full -mb-6">

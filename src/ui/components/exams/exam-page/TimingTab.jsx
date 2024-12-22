@@ -164,7 +164,7 @@ const TimingTab = ({ onNext, examId, examTitle , projectId, skGroupIds , isFinal
               )}
             />
             {errors.eventTime && (
-              <p className="text-red-600 text-xs">{errors.eventTime.message}</p>
+              <p className="text-primary-600 text-xs">{errors.eventTime.message}</p>
             )}
           </div>
           <div className="mb-2 space-y-2">
@@ -195,7 +195,7 @@ const TimingTab = ({ onNext, examId, examTitle , projectId, skGroupIds , isFinal
             )}
           />
           {errors.eventTime && (
-            <p className="text-red-600 text-xs">{errors.eventTime.message}</p>
+            <p className="text-primary-600 text-xs">{errors.eventTime.message}</p>
           )}
         </div>
           {/* <div className="mb-2 space-y-2">
@@ -228,7 +228,7 @@ const TimingTab = ({ onNext, examId, examTitle , projectId, skGroupIds , isFinal
               )}
             />
             {errors.testDuration && (
-              <p className="text-red-600 text-xs">
+              <p className="text-primary-600 text-xs">
                 {errors.testDuration.message}
               </p>
             )}
@@ -263,7 +263,7 @@ const TimingTab = ({ onNext, examId, examTitle , projectId, skGroupIds , isFinal
               )}
             />
             {errors.startDate && (
-              <p className="text-red-600 text-xs">{errors.startDate.message}</p>
+              <p className="text-primary-600 text-xs">{errors.startDate.message}</p>
             )}
           </div>
           <div className="mb-2 space-y-2">
@@ -296,7 +296,7 @@ const TimingTab = ({ onNext, examId, examTitle , projectId, skGroupIds , isFinal
               )}
             />
             {errors.endDate && (
-              <p className="text-red-600 text-xs">{errors.endDate.message}</p>
+              <p className="text-primary-600 text-xs">{errors.endDate.message}</p>
             )}
           </div>
           <div className="space-y-2">
@@ -318,7 +318,7 @@ const TimingTab = ({ onNext, examId, examTitle , projectId, skGroupIds , isFinal
             />
 
             {errors.repetitionType && (
-              <div className="text-red-600 text-xs">
+              <div className="text-primary-600 text-xs">
                 لطفا نوع تکرار را مشخص کنید
               </div>
             )}
@@ -337,7 +337,7 @@ const TimingTab = ({ onNext, examId, examTitle , projectId, skGroupIds , isFinal
               className="input-primary"
             />
             {errors.repetitionNumber && (
-              <p className="text-red-600 text-xs">
+              <p className="text-primary-600 text-xs">
                 {errors.repetitionNumber.message}
               </p>
             )}

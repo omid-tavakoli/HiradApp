@@ -151,7 +151,7 @@ const SubSystemProfile = () => {
       <div className="flex flex-row items-center  mb-4">
         <div className="text-2xl font-black text-gray-600">پروفایل سیستم</div>
         {subSysInfo?.needToFill ? (
-          <span className="mr-2 text-xs font-medium bg-red-200 text-red-800 p-1 rounded-lg">
+          <span className="mr-2 text-xs font-medium bg-primary-200 text-primary-800 p-1 rounded-lg">
             عدم تکمیل
           </span>
         ) : (
@@ -169,7 +169,7 @@ const SubSystemProfile = () => {
               profileSystem={getSubSys}
             />
             {errorPic && (
-              <span className="text-red-600 text-xs block mb-4 -mt-2 mr-4">
+              <span className="text-primary-600 text-xs block mb-4 -mt-2 mr-4">
                 {errorPic}
               </span>
             )}
@@ -181,7 +181,7 @@ const SubSystemProfile = () => {
               </label>
               <TextInput name={"title"} register={register} />
               {errors.title && (
-                <p className="text-red-600 text-xs">{errors.title.message}</p>
+                <p className="text-primary-600 text-xs">{errors.title.message}</p>
               )}
             </div>
             <div className="flex flex-col space-y-1">
@@ -195,7 +195,7 @@ const SubSystemProfile = () => {
                 className="input-primary h-9 !p-0.5"
               />
               {errors.color && (
-                <p className="text-red-600 text-xs">{errors.color.message}</p>
+                <p className="text-primary-600 text-xs">{errors.color.message}</p>
               )}
             </div>
             <div>
@@ -217,7 +217,7 @@ const SubSystemProfile = () => {
                 )}
               />
               {errors.stateId && (
-                <div className="text-red-600 text-xs mt-2">
+                <div className="text-primary-600 text-xs mt-2">
                   لطفا استان را انتخاب کنید
                 </div>
               )}
@@ -242,7 +242,7 @@ const SubSystemProfile = () => {
                 )}
               />
               {errors.cityId && (
-                <div className="text-red-600 text-xs mt-2">
+                <div className="text-primary-600 text-xs mt-2">
                   لطفا شهر را انتخاب کنید
                 </div>
               )}

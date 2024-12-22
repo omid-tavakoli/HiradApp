@@ -76,7 +76,7 @@ const ExamsShowInfo = ({ data: examsData, date }) => {
   return (
     <div className="flex flex-col">
       {!locationPermisison && message && (
-        <div className="text-center text-red-500 text-lg">{message}</div>
+        <div className="text-center text-primary-500 text-lg">{message}</div>
       )}
 
       {examsData.map((exam, index) => (
@@ -105,7 +105,7 @@ const ExamsShowInfo = ({ data: examsData, date }) => {
 
       {!examsData.length && (
         <div className="flex justify-center h-10">
-          <div className="text-red-700">{user?.role?.listSystemSet?.filter(item => item.number == 4 )[0]?.fieldValue  ? user?.role?.listSystemSet?.filter(item => item.number == 4 )[0]?.fieldValue : 'ارزیابی'} برای این تاریخ وجود ندارد.</div>
+          <div className="text-primary-700">{user?.role?.listSystemSet?.filter(item => item.number == 4 )[0]?.fieldValue  ? user?.role?.listSystemSet?.filter(item => item.number == 4 )[0]?.fieldValue : 'ارزیابی'} برای این تاریخ وجود ندارد.</div>
         </div>
       )}
 

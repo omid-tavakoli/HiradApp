@@ -24,7 +24,7 @@ const NumberInput = ({
         onFocus={() => setIsFocus(true)}
         onBlur={() => setIsFocus(false)}
       />
-      {error && <p className="text-red-600 text-xs">{error}</p>}
+      {error && <p className="text-primary-600 text-xs">{error}</p>}
     </div>
   );
 };

@@ -125,7 +125,7 @@ const AddQuestionForm = ({
               className="form-input block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-gray-400 sm:text-sm sm:leading-6"
             />
             {errors.title && (
-              <p className="text-red-600 text-xs">{errors.title.message}</p>
+              <p className="text-primary-600 text-xs">{errors.title.message}</p>
             )}
           </div>
 
@@ -218,7 +218,7 @@ const AddQuestionForm = ({
               className="form-input block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-gray-400 sm:text-sm sm:leading-6"
             />
             {errors.score && (
-              <p className="text-red-600 text-xs">{errors.score.message}</p>
+              <p className="text-primary-600 text-xs">{errors.score.message}</p>
             )}
           </div>
           <div className="mb-2 space-y-2">
@@ -235,7 +235,7 @@ const AddQuestionForm = ({
               className="form-input block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-gray-400 sm:text-sm sm:leading-6"
             />
             {errors.checkQuantity && (
-              <p className="text-red-600 text-xs">
+              <p className="text-primary-600 text-xs">
                 {errors.checkQuantity.message}
               </p>
             )}
@@ -254,7 +254,7 @@ const AddQuestionForm = ({
                   className="form-input block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-gray-400 sm:text-sm sm:leading-6"
                 />
                 {errors.min && (
-                  <p className="text-red-600 text-xs">{errors.min.message}</p>
+                  <p className="text-primary-600 text-xs">{errors.min.message}</p>
                 )}
               </div>
               <div className="mb-2 space-y-2">
@@ -268,7 +268,7 @@ const AddQuestionForm = ({
                   className="form-input block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-gray-400 sm:text-sm sm:leading-6"
                 />
                 {errors.max && (
-                  <p className="text-red-600 text-xs">{errors.max.message}</p>
+                  <p className="text-primary-600 text-xs">{errors.max.message}</p>
                 )}
               </div>
 
@@ -283,7 +283,7 @@ const AddQuestionForm = ({
                   className="form-input block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-gray-400 sm:text-sm sm:leading-6"
                 />
                 {errors.assume && (
-                  <p className="text-red-600 text-xs">
+                  <p className="text-primary-600 text-xs">
                     {errors.assume.message}
                   </p>
                 )}
@@ -329,7 +329,7 @@ const AddQuestionForm = ({
                             />
 
                             {errors.answers?.[index]?.title && (
-                              <p className="text-red-600 text-xs">
+                              <p className="text-primary-600 text-xs">
                                 {errors.answers[index].title.message}
                               </p>
                             )}
@@ -347,7 +347,7 @@ const AddQuestionForm = ({
                             />
 
                             {errors.answers?.[index]?.score && (
-                              <p className="text-red-600 text-xs">
+                              <p className="text-primary-600 text-xs">
                                 {errors.answers[index].score.message}
                               </p>
                             )}
@@ -395,7 +395,7 @@ const AddQuestionForm = ({
                     ))}
                   </div>
                   {isSubmitted && errors.answers && (
-                    <span className="text-xs text-red-600">
+                    <span className="text-xs text-primary-600">
                       {errors.answers.message}
                     </span>
                   )}
@@ -427,7 +427,7 @@ const AddQuestionForm = ({
               className="form-input block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-gray-400 sm:text-sm sm:leading-6"
             />
             {errors.description && (
-              <p className="text-red-600 text-xs">
+              <p className="text-primary-600 text-xs">
                 {errors.description.message}
               </p>
             )}
@@ -445,7 +445,7 @@ const AddQuestionForm = ({
               ...formData,
             }}
           />
-          <small className="text-xs text-red-500">
+          <small className="text-xs text-primary-500">
             این فیلد صرفا جنبه پیش نمایش دارد.
           </small>
         </div>
@@ -453,7 +453,7 @@ const AddQuestionForm = ({
         <div className=" px-4 pt-4 sm:flex sm:flex-row sm:justify-center sm:px-6">
           <button
             type="submit"
-            className="inline-flex w-full justify-center rounded-md bg-primary-800 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-red-500 sm:ml-3 sm:w-auto"
+            className="inline-flex w-full justify-center rounded-md bg-primary-800 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-primary-500 sm:ml-3 sm:w-auto"
             onClick={handleSubmit(onSubmitForm)}
           >
             {onSubmitTitle}

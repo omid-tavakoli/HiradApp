@@ -48,7 +48,7 @@ const NumberFields = ({ data, onChangeAnswer, setIsErrors }) => {
         onChange={(e) => handleAnswerChange(e.target.value)}
       />
       {errors && (
-        <div className="text-red-600 text-xs mt-2">{errors.message}</div>
+        <div className="text-primary-600 text-xs mt-2">{errors.message}</div>
       )}
     </>
   );

@@ -121,7 +121,7 @@ const TimingExamStep = ({ onNext, examId }) => {
             )}
           />
           {errors.eventTime && (
-            <p className="text-red-600 text-xs">{errors.eventTime.message}</p>
+            <p className="text-primary-600 text-xs">{errors.eventTime.message}</p>
           )}
         </div>
         <div className="mb-2 space-y-2">
@@ -152,7 +152,7 @@ const TimingExamStep = ({ onNext, examId }) => {
             )}
           />
           {errors.eventTime && (
-            <p className="text-red-600 text-xs">{errors.eventTime.message}</p>
+            <p className="text-primary-600 text-xs">{errors.eventTime.message}</p>
           )}
         </div>
         {/* <div className="mb-2 space-y-2">
@@ -185,7 +185,7 @@ const TimingExamStep = ({ onNext, examId }) => {
             )}
           />
           {errors.testDuration && (
-            <p className="text-red-600 text-xs">
+            <p className="text-primary-600 text-xs">
               {errors.testDuration.message}
             </p>
           )}
@@ -220,7 +220,7 @@ const TimingExamStep = ({ onNext, examId }) => {
             )}
           />
           {errors.startDate && (
-            <p className="text-red-600 text-xs">{errors.startDate.message}</p>
+            <p className="text-primary-600 text-xs">{errors.startDate.message}</p>
           )}
         </div>
         <div className="mb-2 space-y-2">
@@ -253,7 +253,7 @@ const TimingExamStep = ({ onNext, examId }) => {
             )}
           />
           {errors.endDate && (
-            <p className="text-red-600 text-xs">{errors.endDate.message}</p>
+            <p className="text-primary-600 text-xs">{errors.endDate.message}</p>
           )}
         </div>
         <div className="space-y-2">
@@ -281,7 +281,7 @@ const TimingExamStep = ({ onNext, examId }) => {
           />
 
           {errors.repetitionType && (
-            <div className="text-red-600 text-xs">
+            <div className="text-primary-600 text-xs">
               لطفا نوع تکرار را مشخص کنید
             </div>
           )}
@@ -300,7 +300,7 @@ const TimingExamStep = ({ onNext, examId }) => {
               className="input-primary"
             />
             {errors.repetitionNumber && (
-              <p className="text-red-600 text-xs">
+              <p className="text-primary-600 text-xs">
                 {errors.repetitionNumber.message}
               </p>
             )}

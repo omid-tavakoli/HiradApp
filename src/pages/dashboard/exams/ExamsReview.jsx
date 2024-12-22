@@ -87,7 +87,7 @@ const Exams = () => {
             </button>
           </div>
         ) : (
-          <span className="flex items-center  w-fit bg-red-100 text-red-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded-full">
+          <span className="flex items-center  w-fit bg-primary-100 text-primary-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded-full">
             {user?.role?.listSystemSet?.filter((item) => item.number == 4)[0]
               ?.fieldValue
               ? user?.role?.listSystemSet?.filter((item) => item.number == 4)[0]

@@ -49,7 +49,7 @@ const SettimgForm = ({
               className="form-input block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-gray-400 sm:text-sm sm:leading-6"
             />
             {errors?.fieldValue && (
-              <p className="text-red-600 text-xs">
+              <p className="text-primary-600 text-xs">
                 {errors?.fieldValue.message}
               </p>
             )}
@@ -66,7 +66,7 @@ const SettimgForm = ({
               className="form-input block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-gray-400 sm:text-sm sm:leading-6"
             />
             {errors?.fieldValue2 && (
-              <p className="text-red-600 text-xs">
+              <p className="text-primary-600 text-xs">
                 {errors?.fieldValue2.message}
               </p>
             )}
@@ -83,7 +83,7 @@ const SettimgForm = ({
               className="form-input block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-gray-400 sm:text-sm sm:leading-6"
             />
             {errors.description && (
-              <p className="text-red-600 text-xs">
+              <p className="text-primary-600 text-xs">
                 {errors.description.message}
               </p>
             )}
@@ -95,7 +95,7 @@ const SettimgForm = ({
         <button
           type="submit"
           disabled={loading}
-          className="inline-flex w-full justify-center rounded-md bg-primary-800 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-red-500 sm:ml-3 sm:w-auto"
+          className="inline-flex w-full justify-center rounded-md bg-primary-800 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-primary-500 sm:ml-3 sm:w-auto"
           onClick={handleSubmit(handleSubmitForm)}
         >
           {!loading ? (

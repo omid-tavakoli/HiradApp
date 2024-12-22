@@ -68,7 +68,10 @@ export default function MassExamAssigend({selectedProject}) {
 
   const onSubmit = async (dataPost) => {
     const reqdata = {
-      projectId : selectedProject
+      projectId : selectedProject,
+      subSysId : user.subSysId,
+      formulas : formulas,
+      supervisors : supervisors
     }
     try {
       const response = await request.apiCall( "post", "Contractor/GetContractorAllAdminList", reqdata);
@@ -146,7 +149,7 @@ export default function MassExamAssigend({selectedProject}) {
               )}
             />
             {errors.selectedSupervisor && (
-              <span className="text-xs text-red-600">این فیلد اجباری است</span>
+              <span className="text-xs text-primary-600 mt-2">این فیلد اجباری است</span>
             )}
           </div>
         )}
@@ -169,7 +172,7 @@ export default function MassExamAssigend({selectedProject}) {
             )}
           />
           {errors.selectedFormula && (
-            <span className="text-xs text-red-600">این فیلد اجباری است</span>
+            <span className="text-xs text-primary-600 mt-2">این فیلد اجباری است</span>
           )}
         </div>
       </div>

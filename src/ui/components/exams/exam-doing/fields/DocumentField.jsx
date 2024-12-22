@@ -38,7 +38,7 @@ const DocumentField = ({ data, onChangeAnswer, setIsErrors }) => {
         onChange={handleAnswerChange}
       />
       {errors && (
-        <div className="text-red-600 text-xs mt-2">{errors.message}</div>
+        <div className="text-primary-600 text-xs mt-2">{errors.message}</div>
       )}
     </>
   );

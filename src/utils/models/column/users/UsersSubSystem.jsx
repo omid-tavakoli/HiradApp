@@ -42,7 +42,7 @@ const columns = [
       </span>
     ) :
     info.getValue() == 4  && (
-      <span className="w-fit bg-red-100 text-red-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded-full">
+      <span className="w-fit bg-primary-100 text-primary-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded-full">
        عدم تکمیل
       </span>
     ) 

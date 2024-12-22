@@ -101,7 +101,7 @@ const SendNotification = () => {
                 )}
               />
               {errors.subUserId && (
-                <p className="text-red-600 text-xs">
+                <p className="text-primary-600 text-xs">
                   {errors.subUserId.message}
                 </p>
               )}
@@ -112,7 +112,7 @@ const SendNotification = () => {
               </label>
               <TextArea name={"text"} register={register} placeholder={"متن پیام خود را وارد نمایید"}/>
               {errors.text && (
-                <p className="text-red-600 text-xs">{errors.text.message}</p>
+                <p className="text-primary-600 text-xs">{errors.text.message}</p>
               )}
             </div>
           </div>

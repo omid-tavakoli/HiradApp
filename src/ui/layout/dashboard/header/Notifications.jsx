@@ -75,7 +75,7 @@ const Notifications = () => {
         >
           <BellIcon className="w-6 h-6" />
           {numberOfNotif != 0 && (
-            <div className="absolute inline-flex items-center justify-center w-5 h-5 text-xs font-bold text-white bg-red-500 border-2 border-white rounded-full -top-2 -start-2">
+            <div className="absolute inline-flex items-center justify-center w-5 h-5 text-xs font-bold text-white bg-primary-500 border-2 border-white rounded-full -top-2 -start-2">
               {numberOfNotif}
             </div>
           )}

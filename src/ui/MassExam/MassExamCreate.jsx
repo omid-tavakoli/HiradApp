@@ -145,7 +145,7 @@ const MassExamCreate = ({ onNext, setSelectedProject, selectedProject }) => {
               className="form-input block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-gray-400 sm:text-sm sm:leading-6"
             />
             {errors.title && (
-              <p className="text-red-600 text-xs">{errors.title.message}</p>
+              <p className="text-primary-600 text-xs">{errors.title.message}</p>
             )}
           </div>
           <div className=" flex flex-col space-y-2">
@@ -191,7 +191,7 @@ const MassExamCreate = ({ onNext, setSelectedProject, selectedProject }) => {
             />
 
             {errors.skgIds && (
-              <div className="text-red-600 text-xs">
+              <div className="text-primary-600 text-xs">
                 لطفا دسته بندی را مشخص کنید
               </div>
             )}

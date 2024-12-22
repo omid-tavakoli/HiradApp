@@ -92,7 +92,7 @@ const IsNotCompanyExists = ({
             className="form-input block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-gray-400 sm:text-sm sm:leading-6"
           />
           {errors.mobile && (
-            <p className="text-red-600 text-xs">{errors.mobile.message}</p>
+            <p className="text-primary-600 text-xs">{errors.mobile.message}</p>
           )}
         </div>
       </form>

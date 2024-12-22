@@ -91,7 +91,7 @@ const ZoneForm = ({
             className="form-input block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-gray-400 sm:text-sm sm:leading-6"
           />
           {errors.title && (
-            <p className="text-red-600 text-xs">{errors.title.message}</p>
+            <p className="text-primary-600 text-xs">{errors.title.message}</p>
           )}
         </div>
 
@@ -129,7 +129,7 @@ const ZoneForm = ({
             )}
           />
           {errors.stateId && (
-            <div className="text-red-600 text-xs mt-2">
+            <div className="text-primary-600 text-xs mt-2">
               لطفا استان را انتخاب کنید
             </div>
           )}
@@ -169,7 +169,7 @@ const ZoneForm = ({
             )}
           />
           {errors.cityId && (
-            <div className="text-red-600 text-xs mt-2">
+            <div className="text-primary-600 text-xs mt-2">
               لطفا شهر را انتخاب کنید
             </div>
           )}

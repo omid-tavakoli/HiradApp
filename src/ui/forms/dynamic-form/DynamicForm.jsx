@@ -147,7 +147,7 @@ const DynamicForm = ({
               />
             )}
             {errors[field.name] && (
-              <p className="text-red-600 text-xs">
+              <p className="text-primary-600 text-xs">
                 {errors[field.name].message}
               </p>
             )}

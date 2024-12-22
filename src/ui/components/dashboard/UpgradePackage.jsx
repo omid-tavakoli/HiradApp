@@ -66,7 +66,7 @@ const UpgradePackage = () => {
           <div
             key={item.id}
             className={`relative p-6 rounded-2xl shadow cursor-pointer ${
-              selectedPackage?.id === item.id ? "bg-red-100" : ""
+              selectedPackage?.id === item.id ? "bg-primary-100" : ""
             }`}
             onClick={() => setSelectedPackage(item)}
           >

@@ -156,7 +156,7 @@ const QuestionsTab = () => {
       title: "پیش نمایش",
       children: (
         <>
-          <div className="text-center text-sm text-red-500">
+          <div className="text-center text-sm text-primary-500">
             این فرم صرفا جنبه پیش نمایش دارد.
           </div>
           {list.map((item) => (

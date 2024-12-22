@@ -191,7 +191,7 @@ const PersonalInformation = ({ setUserData }) => {
       <div>
         <PhotoProfile pic={defaultValues?.pic} userId={defaultValues?.id} />
         {errorPic && (
-          <span className="text-red-600 text-xs block mb-4 -mt-2 mr-4">
+          <span className="text-primary-600 text-xs block mb-4 -mt-2 mr-4">
             {errorPic}
           </span>
         )}
@@ -208,7 +208,7 @@ const PersonalInformation = ({ setUserData }) => {
               defaultValue={defaultValues.name || ""}
             />
             {errors.name && (
-              <p className="text-red-600 text-xs">{errors.name.message}</p>
+              <p className="text-primary-600 text-xs">{errors.name.message}</p>
             )}
           </div>
           <div className="flex flex-col space-y-2">
@@ -221,7 +221,7 @@ const PersonalInformation = ({ setUserData }) => {
               defaultValue={defaultValues.family || ""}
             />
             {errors.family && (
-              <p className="text-red-600 text-xs">{errors.family.message}</p>
+              <p className="text-primary-600 text-xs">{errors.family.message}</p>
             )}
           </div>
           <div className="flex flex-col space-y-2">
@@ -234,7 +234,7 @@ const PersonalInformation = ({ setUserData }) => {
               defaultValue={defaultValues.userName || ""}
             />
             {errors.userName && (
-              <p className="text-red-600 text-xs">{errors.userName.message}</p>
+              <p className="text-primary-600 text-xs">{errors.userName.message}</p>
             )}
           </div>
           <div className="flex flex-col space-y-2">
@@ -247,7 +247,7 @@ const PersonalInformation = ({ setUserData }) => {
               defaultValue={defaultValues.nationalCode || ""}
             />
             {errors.nationalCode && (
-              <p className="text-red-600 text-xs">
+              <p className="text-primary-600 text-xs">
                 {errors.nationalCode.message}
               </p>
             )}
@@ -262,7 +262,7 @@ const PersonalInformation = ({ setUserData }) => {
               defaultValue={defaultValues.telephone || ""}
             />
             {errors.telephone && (
-              <p className="text-red-600 text-xs">{errors.telephone.message}</p>
+              <p className="text-primary-600 text-xs">{errors.telephone.message}</p>
             )}
           </div>
           <div className="flex flex-col space-y-2">
@@ -276,7 +276,7 @@ const PersonalInformation = ({ setUserData }) => {
               defaultValue={defaultValues.birthdate || ""}
             />
             {errors.birthdate && (
-              <p className="text-red-600 text-xs">{errors.birthdate.message}</p>
+              <p className="text-primary-600 text-xs">{errors.birthdate.message}</p>
             )}
           </div>
 
@@ -299,7 +299,7 @@ const PersonalInformation = ({ setUserData }) => {
               )}
             />
             {errors.stateId && (
-              <div className="text-red-600 text-xs mt-2">
+              <div className="text-primary-600 text-xs mt-2">
                 لطفا استان را انتخاب کنید
               </div>
             )}
@@ -324,7 +324,7 @@ const PersonalInformation = ({ setUserData }) => {
               )}
             />
             {errors.cityId && (
-              <div className="text-red-600 text-xs mt-2">
+              <div className="text-primary-600 text-xs mt-2">
                 لطفا شهر را انتخاب کنید
               </div>
             )}
@@ -339,7 +339,7 @@ const PersonalInformation = ({ setUserData }) => {
               defaultValue={defaultValues.address || ""}
             />
             {errors.address && (
-              <p className="text-red-600 text-xs">{errors.address.message}</p>
+              <p className="text-primary-600 text-xs">{errors.address.message}</p>
             )}
           </div>
           <div className="text-xl font-black text-gray-600 my-4 col-span-3">
@@ -355,7 +355,7 @@ const PersonalInformation = ({ setUserData }) => {
               defaultValue={defaultValues.telegramId || ""}
             />
             {errors.telegramId && (
-              <p className="text-red-600 text-xs">
+              <p className="text-primary-600 text-xs">
                 {errors.telegramId.message}
               </p>
             )}
@@ -370,7 +370,7 @@ const PersonalInformation = ({ setUserData }) => {
               defaultValue={defaultValues.whatsappId || ""}
             />
             {errors.whatsappId && (
-              <p className="text-red-600 text-xs">
+              <p className="text-primary-600 text-xs">
                 {errors.whatsappId.message}
               </p>
             )}
@@ -385,7 +385,7 @@ const PersonalInformation = ({ setUserData }) => {
               defaultValue={defaultValues.gapId || ""}
             />
             {errors.gapId && (
-              <p className="text-red-600 text-xs">{errors.gapId.message}</p>
+              <p className="text-primary-600 text-xs">{errors.gapId.message}</p>
             )}
           </div>
           <div className="flex flex-col space-y-2">
@@ -398,7 +398,7 @@ const PersonalInformation = ({ setUserData }) => {
               defaultValue={defaultValues.eitaId || ""}
             />
             {errors.eitaId && (
-              <p className="text-red-600 text-xs">{errors.eitaId.message}</p>
+              <p className="text-primary-600 text-xs">{errors.eitaId.message}</p>
             )}
           </div>
           <div className="flex flex-col space-y-2">
@@ -411,7 +411,7 @@ const PersonalInformation = ({ setUserData }) => {
               defaultValue={defaultValues.baleId || ""}
             />
             {errors.baleId && (
-              <p className="text-red-600 text-xs">{errors.baleId.message}</p>
+              <p className="text-primary-600 text-xs">{errors.baleId.message}</p>
             )}
           </div>
         </div>

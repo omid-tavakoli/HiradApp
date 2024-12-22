@@ -22,7 +22,7 @@ const PasswordChecker = memo(({ password }) => {
             className={`h-2 rounded-xl transition-colors ${
               i < passwordScore
                 ? passwordScore <= 2
-                  ? "bg-red-400"
+                  ? "bg-primary-400"
                   : passwordScore <= 4
                   ? "bg-yellow-400"
                   : "bg-green-500"
