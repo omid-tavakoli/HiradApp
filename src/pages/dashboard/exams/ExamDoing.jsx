@@ -103,6 +103,58 @@ const ExamDoing = () => {
     navigate("/dashboard/exams");
   };
 
+  useEffect(() => {
+    const syncOfflineAnswers = async () => {
+      if (navigator.onLine) {
+        const offlineAnswers = JSON.parse(
+          localStorage.getItem(`Answers_${examId}`) || "{}"
+        );
+
+        for (const questionId in offlineAnswers) {
+          const currentAnswer = offlineAnswers[questionId];
+          try {
+            const fd = new FormData();
+            fd.append("examId", examId);
+            fd.append("Time", format(new Date(), "yyyy/MM/dd HH:mm:ss"));
+            fd.append("longitude", longitude);
+            fd.append("latitude", latitude);
+
+            Object.entries(currentAnswer).forEach(([key, value]) => {
+              if (value instanceof FileList) {
+                [...value].forEach((file) => fd.append(key, file));
+              } else {
+                fd.append(key, value);
+              }
+            });
+
+            await requestSubmit.apiCall(
+              "post",
+              "Question/UserAnswerQuestion",
+              fd
+            );
+
+            // حذف پاسخ ارسال‌شده از localStorage
+            delete offlineAnswers[questionId];
+            toast.success("پاسخ ذخیره‌شده با موفقیت ارسال شد");
+          } catch (error) {
+            console.log("خطا در ارسال پاسخ ذخیره‌شده:", error);
+          }
+        }
+        
+        localStorage.setItem(
+          `Answers_${examId}`,
+          JSON.stringify(offlineAnswers)
+        );
+      }
+    };
+
+    window.addEventListener("online", syncOfflineAnswers);
+
+    return () => {
+      window.removeEventListener("online", syncOfflineAnswers);
+    };
+  }, [examId, longitude, latitude]);
+
   const getExamLocal = () => {
     const savedData = localStorage.getItem(`Questions`);
     setQuestions(JSON.parse(savedData));
