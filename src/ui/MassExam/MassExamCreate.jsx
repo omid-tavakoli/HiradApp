@@ -21,7 +21,7 @@ const schema = yup.object().shape({
     )
     .required("لطفا دسته بندی مورد نظر را انتخاب کنید"),
 });
-const MassExamCreate = ({ onNext, setSelectedProject, selectedProject }) => {
+const MassExamCreate = ({ onNext, setSelectedProject, selectedProject , setSkgId }) => {
   const [SKG, setSKG] = useState([]);
   const [modalContent, setModalContent] = useState(null);
   const [showModal, setShowModal] = useState([]);
@@ -65,7 +65,7 @@ const MassExamCreate = ({ onNext, setSelectedProject, selectedProject }) => {
     try {
       const { data } = await requestGetlist.apiCall(
         "get",
-        `SKGroup/GetList/${user?.subSysId}/${subSysKindId}`
+        `SKGroup/GetList/${user?.subSysId}/${subSysKindId[0]}`
       );
       data ? setSKG(data) : setSKG([]);
     } catch (error) {
@@ -106,6 +106,7 @@ const MassExamCreate = ({ onNext, setSelectedProject, selectedProject }) => {
     try {
       const response = await request.apiCall("post", "Exam/AddAll", reqData);
       if (response?.isSuccess) {
+        setSkgId( data?.skgIds?.map((item) => item.value))
         toast.success(
           `${
             user?.role?.listSystemSet?.filter((item) => item.number == 4)[0]

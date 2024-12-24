@@ -6,7 +6,7 @@ import useApi from "../../hooks/useApi";
 import toast from "react-hot-toast";
 import { useForm, Controller } from "react-hook-form";
 
-export default function MassExamAssigend({selectedProject}) {
+export default function MassExamAssigend({selectedProject ,skgId}) {
   const [skgType, setSkgType] = useState("exam");
   const [supervisors, setSupervisors] = useState([]);
   const [formulas, setFormulas] = useState([]);
@@ -68,13 +68,13 @@ export default function MassExamAssigend({selectedProject}) {
 
   const onSubmit = async (dataPost) => {
     const reqdata = {
-      projectId : selectedProject,
-      subSysId : user.subSysId,
+      projectIds : selectedProject,
+      skgIds : skgId,
       formulas : formulas,
-      supervisors : supervisors
+      supervisors : supervisors,
     }
     try {
-      const response = await request.apiCall( "post", "Contractor/GetContractorAllAdminList", reqdata);
+      const response = await request.apiCall( "post", "Exam/AddExamMembersList", reqdata);
       toast.success(
         `${
           user?.role?.listSystemSet?.filter((item) => item.number == 4)[0]

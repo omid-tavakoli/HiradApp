@@ -16,6 +16,7 @@ const MassExam = () => {
 
   const [selectedIndex, setSelectedIndex] = useState(0);
   const [selectedProject, setSelectedProject] = useState([]);
+  const [skgId , setSkgId ] = useState([])
   const { user } = useUser();
   
   let tabs = {
@@ -24,6 +25,7 @@ const MassExam = () => {
         onNext={() => handleNextTab()}
         setSelectedProject={setSelectedProject}
         selectedProject={selectedProject}
+        setSkgId={setSkgId}
       />
     ),
     زمانبندی: (
@@ -36,6 +38,7 @@ const MassExam = () => {
       <MassExamAssigend
         selectedProject={selectedProject}
         onNext={() => handleNextTab()}
+        skgId={skgId}
       />
     ),
   };
