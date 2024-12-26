@@ -220,7 +220,7 @@ const ExamDoing = () => {
   };
 
   const saveAnswerOffline = (currentAnswer) => {
-    toast.error("اتصال به اینترنت برقرار نیست. پاسخ به‌صورت موقت ذخیره شد");
+    toast("اتصال به اینترنت برقرار نیست. پاسخ به‌صورت موقت ذخیره شد");
     const updatedAnswers = {
       ...answers,
       [questions[activeStep]?.id]: currentAnswer,

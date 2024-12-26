@@ -71,7 +71,7 @@ const Exams = () => {
               <ClipboardDocumentListIcon className="w-4 h-4 ml-1" />
               <span>بازبینی</span>
             </button>
-            <button
+            {/* <button
               onClick={() => handleReview(info.row.original.id)}
               className=" w-full flex justify-center rounded-md bg-white p-2 text-xs text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50 sm:mt-0 sm:w-auto mr-3"
             >
@@ -84,7 +84,7 @@ const Exams = () => {
             >
               <XMarkIcon className="w-4 h-4 ml-1" />
               <span>رد</span>
-            </button>
+            </button> */}
           </div>
         ) : (
           <span className="flex items-center  w-fit bg-primary-100 text-primary-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded-full">

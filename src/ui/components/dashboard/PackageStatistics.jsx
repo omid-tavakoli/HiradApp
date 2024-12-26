@@ -4,6 +4,7 @@ import useApi from "../../../hooks/useApi";
 import UpgradePackage from "./UpgradePackage";
 import RadialBar from "../../element/chart/RadialBar";
 import { format, parse, differenceInDays, startOfDay } from "date-fns-jalali";
+import ModalAction from "../../ModalAction";
 
 const PackageStatistics = () => {
   const [statistic, setStatistic] = useState(null);
@@ -77,7 +78,7 @@ const PackageStatistics = () => {
   const handleShow = () => {
     setModalContent({
       title: "انتخاب پکیج",
-      onSubmit: false,
+      onsubmit : false,
       children: <UpgradePackage />,
     });
     setShowModal(true);

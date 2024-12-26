@@ -124,7 +124,7 @@ const ExamsManagement = () => {
                 ?.fieldValue
             : "ارزیابی"}
         </button>
-        <button
+        {/* <button
           type="button"
           className="btn-primary w-fit"
           onClick={handleRedirectMassExamCreate}
@@ -136,7 +136,7 @@ const ExamsManagement = () => {
                 ?.fieldValue
             : "ارزیابی"}{" "}
           جمعی
-        </button>
+        </button> */}
       </div>
       {requestGetlist.loading && (
         <div className="w-full flex justify-center">
